@@ -45,7 +45,7 @@ names = np.array(names_org)
 del labels
 
 # Load data array
-alpha_participant = np.load(r'C:\Users\em17531\Desktop\Google_data\nbs_stats\nbs_participant_alpha.npy')
+alpha_participant = np.load(r'C:\Users\em17531\Desktop\Google_data\nbs_stats\nbs_participant_gamma.npy')
 
 # Find sig edges
 edges = find_sig_edged_nodes(alpha_participant)
@@ -62,4 +62,5 @@ for i in edges:
 # Write to array/Dataframe and save if wanted
 array = np.array(edges_with_names)
 df = pd.DataFrame(array)
-df.to_csv('Beta_sig_edge_names.csv')
+df.to_csv('Gamma_sig_edge_names.csv')
+

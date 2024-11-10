@@ -1,4 +1,20 @@
+import mne
+import dyconnmap
+import os
+import time
+import numpy as np
 
+band = ['theta',
+        'alpha',
+        'beta',
+        'gamma']
+
+tasks = ['participant_conversation',
+         'interviewer_repetition',
+         'participant_repetition',
+         'da',
+         'ba',
+         'interviewer_conversation']
 
 master_dir = '/media/sahib/macos/root/LCMV_output_19092024'
 save_dir = '/media/sahib/Mangor_2TB/Geet/Tasks/interviewer_repetition/Gamma/' # don't forget the / on the end!
